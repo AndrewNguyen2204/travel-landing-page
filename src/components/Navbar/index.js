@@ -19,29 +19,26 @@ const Navbar = ({ toggle }) => {
                                 About
                             </NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to="discover">
-                                Discover
-                            </NavLinks>
-                        </NavItem>
+                        
                         <NavItem>
                             <NavLinks to="services">
                                 Services
                             </NavLinks>
                         </NavItem>
-                        <NavItem>
-                            <NavLinks to="signup">
-                                Sign Up
+                       <NavItem>
+                            <NavLinks to="contact">
+                                Contact
                             </NavLinks>
                         </NavItem>
-                        <NavBtn>
-                            <NavBtnLink to='signin'>Sign In</NavBtnLink>
-                        </NavBtn>
+
                     </NavMenu>
+                    <NavBtn>
+                        <NavBtnLink to='signup'>Sign Up</NavBtnLink>
+                    </NavBtn>
                 </NavbarContainer>
             </Nav>
         </>
     )
 }
 
-export default Navbar
+export default Navbar;

@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, MaskBg, VideoBg } from './HeroElements';
+import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroP, MaskBg, VideoBg } from './HeroElements';
 import Video from '../../videos/video.mp4';
 import Mask from '../../images/mask.jpg';
-import { Button } from '../ButtonElements';
+import {  LinkButton } from '../Button/ButtonElements';
+import SectionTitle from '../Elements/SectionTitle';
 
 
 
-const HomeSection = () => {
+const HeroSection = ({
+    id,
+    title,
+    description,
+    buttonLabel
+}) => {
 
     const [hover, setHover] = useState(false);
 
@@ -15,30 +21,30 @@ const HomeSection = () => {
     }
 
     return (
-        <HeroContainer id="home">
+        <HeroContainer id={id}>
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
                 <MaskBg src={Mask} alt="mask" />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Book the Best Things of Nature and Creators</HeroH1>
+                <SectionTitle title={title} large/>
+               
                 <HeroP>
-                    Modern thing typically also allow users to book hotel rooms, rental cars, airline tickets as well as other activities and tours.
+                    {description}
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button 
-                    to="signup" 
+                    <LinkButton 
+                    to="booking" 
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
-                    primary
-                    dark
+                    primary                   
                     >
-                        Book Now {hover ? <ArrowForward /> : <ArrowRight />}
-                    </Button>
+                        {buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
+                    </LinkButton>
                 </HeroBtnWrapper>
             </HeroContent>
         </HeroContainer>
     )
 }
 
-export default HomeSection;
+export default HeroSection;

@@ -1,20 +1,13 @@
 import styled from 'styled-components';
-import {MdArrowForward,MdKeyboardArrowRight} from 'react-icons/md';
+import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { P, Container } from '../Elements/Elements';
 
-
-export const HeroContainer = styled.div`
-
-    background: #0c0c0c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30px;
+export const HeroContainer = styled(Container)`
+    
     height: 800px;
     position: relative;
     z-index: 1;
 
-
-    // Add: before styles
 
 
 `;
@@ -61,48 +54,27 @@ export const MaskBg = styled.img`
 `;
 
 export const HeroContent = styled.div`
-    z-index: 3;
+    
     max-width: 1200px;
-    position: absolute;
-    padding: 8px 24px;
+    position: relative;
+    z-index: 3;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgba(255, 255, 255,0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 `;
 
-export const HeroH1 = styled.h1`
-    color: #fff;
-    font-size: 48px;
-    text-align: center;
-    
-    @media screen and (max-width:768px){
-        font-size: 40px;
 
-    }
-
-    @media screen and (max-width:480px){
-        font-size: 32px;
-        
-    }
-`;
-
-export const HeroP = styled.p`
-   margin-top: 24px;
-   color: #fff;
-   font-size:24px;
-   text-align: center;
-   max-width: 600px; 
-
-
-   @media screen and (max-width:768px){
-    font-size: 24px;
+export const HeroP = styled(P)`
+   margin-top: 24px;   
 
 }
 
-@media screen and (max-width:480px){
-    font-size: 18px;
-    
-}
 `;
 
 

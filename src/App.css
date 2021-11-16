@@ -4,3 +4,13 @@
     box-sizing: border-box;
     font-family: 'Encode Sans Expanded', sans-serif;
 }
+
+:root{
+    --primary-color: #ffac00;
+    --secondary-color: #dccde7;
+    --bg-color: #fff;
+    --card-bg-color: #f3f3f2;
+    --icon-color: #ffd48b;
+    --text-black: #010606;
+    --text-white: #fff;
+}
