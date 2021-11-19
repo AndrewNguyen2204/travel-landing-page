@@ -60,7 +60,7 @@ export const SliderContent = styled.div`
     
     display: flex; 
     transition: all 250ms linear;
-    
+    margin-left: -10px;
 
 
 
@@ -81,6 +81,8 @@ export const SliderContent = styled.div`
 export const PrevButton = styled.span`
 
     position: absolute;
+    height: 50px;
+    width: 50px;
     z-index: 1;
     bottom: 0;
     left: 0;
@@ -97,6 +99,7 @@ export const PrevButton = styled.span`
         background: #fff;
         box-shadow: inset 0 0 2px var(--primary-color),
         0 12px 24px rgba(0,0,0,0.5);
+        transform: translateY(50%) scale(1.05);
     }
 `;
 
@@ -106,6 +109,8 @@ position: absolute;
 z-index: 1;
 bottom: 0;
 right: 0;
+height: 50px;
+width: 50px;
 transform: translateY(50%);    
 color: #fff;
 background: var(--text-black);    
@@ -119,6 +124,7 @@ transition: all 0.3s;
     background: #fff;
     box-shadow: inset 0 0 2px var(--primary-color),
     0 12px 24px rgba(0,0,0,0.5);
+    transform: translateY(50%) scale(1.05);
 }
 
 
@@ -143,7 +149,7 @@ export const NextIcon = styled(MdKeyboardArrowRight)`
 
 export const FeedbackCard = styled.div`
     position: relative;   
-    padding: 60px 20px;
+    padding: 60px 10px;
     
     
 
@@ -187,28 +193,44 @@ export const CustomerImg = styled.img`
 `;
 
 export const Feedback = styled.div`
-    width: 100%;  
+    width: 100%; 
+    height: 250px; 
     background: var(--card-bg-color); 
     padding: 30px 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-around;
-
+    flex-direction: column;   
 
 
 `;
 
 export const Comment = styled.p`
+    
     font-size: 1rem;
     color: var(--text-black);
 
+    /* text-truncate */
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  
 
 `;
 
 export const CustomerRate = styled.div`
 
-    margin: 20px 0;
+  
+   display:flex;
+   flex-direction: column;
+   margin-top: auto;
+    
+`;
+
+export const StarsWrap = styled.div`
+
+   margin-bottom: 12px;
 
 `;
 
@@ -216,5 +238,14 @@ export const CustomerName = styled.span`
     font-size: 1rem;
     font-weight: bold;
     color: var(--text-black);
+
+
+    /* text-truncate */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
 
 `;

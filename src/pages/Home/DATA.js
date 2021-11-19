@@ -63,7 +63,7 @@ export const DestinationsContent = {
             imgSrc: '../../images/bangkok.jpg',
             imgAlt: 'bangkok',
             tourName: 'bangkok, thailand',
-            tourDesc: 'temples and clean beauty',
+            desc: 'temples and clean beauty',
             price: '$420/Person',
             rating: 4.5
 
@@ -72,7 +72,7 @@ export const DestinationsContent = {
         {
             id: 'quebec',
             imgSrc: '../../images/Quebec-City.jpg',
-            imgAlt: 'bangkok',
+            imgAlt: 'quebec',
             tourName: 'quebec city, canada',
             desc: 'creativeness with nature',
             price: '$525/Person',
@@ -151,7 +151,7 @@ export const AboutContent = {
     id: 'about',
     title: 'fill your holidays with us',
     description: 'The concept of taking  a vacation is a recent invention and has developed through the last two comorious historically, the idea of travel for recroation was a hloory that envy weathy people could afford.',
-    imgSrc: '../../images/travel-girl.png',
+    imgSrc: '../../images/travel-girl-4.png',
     imgAlt: 'travel-girl',
     items: [
         {
@@ -233,7 +233,7 @@ export const FeedbackContent = {
             id: 'rosa',
             imgSrc: '../../images/client-1.png',
             imgAlt: 'rosa',
-            comment: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus omnis rem, nisi pariatur quae explicabo voluptas enim distinctio repellat et, molestias ipsa ut nam. Corporis consequuntur aut error unde nulla.',
+            comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, exercitationem. Ullam explicabo saepe rerum cupiditate, enim perferendis aut dignissimos iure, consequuntur placeat incidunt praesentium, odit eveniet repellendus ipsa dicta. Accusantium asperiores aspernatur reprehenderit, tempore omnis mollitia, officiis quisquam veritatis rerum eum minus, placeat consequuntur quia vel earum! Tenetur, assumenda suscipit.',
             userName: 'Rosa Watson',
             bgColor: ''
 

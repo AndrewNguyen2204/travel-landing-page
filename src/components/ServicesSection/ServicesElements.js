@@ -57,7 +57,9 @@ export const ServicesCard = styled.div`
     align-items: center;
     transition: all 0.3s ease-in-out;
     &:hover{
+        transition: all 0.3s ease-in-out;
         box-shadow: 0 0 24px rgba(0,0,0,0.5);
+        transform: scale(1.05);
     }
 
 `;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroP, MaskBg, VideoBg } from './HeroElements';
 import Video from '../../videos/video.mp4';
 import Mask from '../../images/mask.jpg';
-import {  LinkButton } from '../Button/ButtonElements';
+import { LinkButton } from '../Button/ButtonElements';
 import SectionTitle from '../Elements/SectionTitle';
 
 
@@ -27,17 +27,22 @@ const HeroSection = ({
                 <MaskBg src={Mask} alt="mask" />
             </HeroBg>
             <HeroContent>
-                <SectionTitle title={title} large/>
-               
+                <SectionTitle title={title} large />
+
                 <HeroP>
                     {description}
                 </HeroP>
                 <HeroBtnWrapper>
-                    <LinkButton 
-                    to="booking" 
-                    onMouseEnter={onHover} 
-                    onMouseLeave={onHover}
-                    primary                   
+                    <LinkButton
+                        to="booking"
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        primary="true"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
                     >
                         {buttonLabel} {hover ? <ArrowForward /> : <ArrowRight />}
                     </LinkButton>

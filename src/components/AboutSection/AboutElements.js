@@ -163,8 +163,8 @@ export const ItemIcon = styled.span`
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    font-size: 1.5rem;
-    color: var(--icon-color);
+    font-size: 1.5rem;    
+    color: var(--primary-color);
     margin: 0  20px;
 `;
 

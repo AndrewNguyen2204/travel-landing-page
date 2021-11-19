@@ -1,17 +1,18 @@
 import styled from 'styled-components';
-import Blob from './Blob';
+
 
 
 
 export const BubblesWrapper = styled.div`
 
             position: absolute;
-            top:0;
+            top:-1rem;
             left:0;
-            right:0;
+            width: 100%;                      
             height:1rem;
             background: ${({ bgColor }) => (bgColor ? bgColor : '#34a4e8')};
             filter:url("#blob");
+            z-index:0;
 
 
 `;
@@ -26,6 +27,7 @@ export const Bubble = styled.div`
     animation:bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
     bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
     transform:translate(-50%, 100%);
+   
 
     @keyframes bubble-size {
         0%, 75% {
@@ -49,9 +51,3 @@ export const Bubble = styled.div`
 `;
 
 
-export const BlobSVG = styled(Blob)`
-
-    position:fixed; 
-    top:100vh;
-
-`;

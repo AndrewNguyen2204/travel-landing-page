@@ -8,6 +8,8 @@ import DestinationsSection from '../../components/DestinationsSection';
 import AboutSection from '../../components/AboutSection';
 import FeedbackSection from '../../components/FeedbackSection';
 import BookingSection from '../../components/BookingSection';
+import Footer from '../../components/Footer';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 
@@ -24,6 +26,7 @@ const Home = () => {
     
     return (
         <>
+            <ScrollToTop/>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HeroSection {...HeroContent}/>
@@ -32,6 +35,7 @@ const Home = () => {
             <AboutSection {...AboutContent}/>
             <FeedbackSection {...FeedbackContent}/>
             <BookingSection {...BookingContent}/>
+            <Footer id="footer"/>
         </>
     )
 }

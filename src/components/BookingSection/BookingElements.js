@@ -1,7 +1,14 @@
 import styled from 'styled-components';
-import { P } from '../Elements/Elements';
+import { Container, P } from '../Elements/Elements';
 
 
+
+
+export const BookingContainer = styled(Container)`
+
+padding: 60px 40px;
+
+`;
 
 
 

@@ -31,6 +31,9 @@ export const DestinationsCards = styled.div`
     grid-gap: 20px;
     transition: all 0.3s ease-in-out;
 
+
+   
+
     @media screen and (max-width:768px){
     grid-template-columns: repeat(2,1fr);
 
@@ -71,7 +74,9 @@ export const DestinationsCard = styled.div`
     align-items: center;
     transition: all 0.3s ease-in-out;
     &:hover{
+        transition: all 0.3s ease-in-out;
         box-shadow: 0 0 24px rgba(0,0,0,0.5);
+        transform: scale(1.05);
     }
 
 `;
@@ -110,8 +115,17 @@ export const CardText = styled.div`
 
 export const CardH2 = styled.h2`
 
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-transform: capitalize;
+
+
+    /* text-truncate */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 `;
 
 export const CardP = styled.p`
@@ -119,6 +133,13 @@ export const CardP = styled.p`
     font-size: 1rem;
     margin-top: 12px;
     text-transform: capitalize;
+    /* text-truncate */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
 `;
 
 export const CardBottom = styled.div`
@@ -167,12 +188,14 @@ export const DetailBtn = styled.button`
     outline: none;
     background: var(--text-black);
     color: var(--text-white);
+    cursor:pointer;
     transition: all 0.3s ease-in-out;
 
 
     &:hover,&:focus {
-        color: var(--text-black);
-        background: var(--text-white);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+        transform: scale(1.05);
     }
 
 `;

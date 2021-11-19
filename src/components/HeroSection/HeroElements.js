@@ -6,6 +6,7 @@ export const HeroContainer = styled(Container)`
     
     height: 800px;
     position: relative;
+    padding: 0 60px;
     z-index: 1;
 
 
@@ -58,7 +59,7 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: relative;
     z-index: 3;
-    padding: 20px 40px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +73,7 @@ export const HeroContent = styled.div`
 
 export const HeroP = styled(P)`
    margin-top: 24px;   
-
+    max-width: 600px;
 }
 
 `;

@@ -1,16 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Encode Sans Expanded', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+
+
+
+
+
+:root {
+  --primary-color: #ffac00;
+  --secondary-color: #dccde7;
+  --bg-color: #fff;
+  --card-bg-color: #ebe2d57a;
+  --icon-color: #ffd48b;
+  --text-black: #010606;
+  --text-white: #fff;
 }
 
-:root{
-    --primary-color: #ffac00;
-    --secondary-color: #dccde7;
-    --bg-color: #fff;
-    --card-bg-color: #f3f3f2;
-    --icon-color: #ffd48b;
-    --text-black: #010606;
-    --text-white: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }

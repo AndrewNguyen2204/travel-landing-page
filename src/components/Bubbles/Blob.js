@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Blob() {
     return (
-        <svg>
+        <svg style={{ position:'fixed', 
+            top:'100vh'}}>
             <defs>
                 <filter id="blob">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>

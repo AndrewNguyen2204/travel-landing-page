@@ -1,9 +1,8 @@
 import React from 'react';
 import { Button } from '../Button/ButtonElements';
-import { Container } from '../Elements/Elements';
 import SectionTitle from '../Elements/SectionTitle';
-import { BookingContent, BookingP } from './BookingElements';
-
+import { BookingContainer, BookingContent, BookingP } from './BookingElements';
+import {useNavigate } from 'react-router-dom';
 
 
 const BookingSection = ({
@@ -12,16 +11,23 @@ const BookingSection = ({
     description,
     btnLabel
 }) => {
+
+    const navigate = useNavigate();
+
+
     return (
         <>
-            <Container id={id}>
+            <BookingContainer id={id}>
                 <BookingContent>
+
                     <SectionTitle title={title} firstBlack />
                     <BookingP>{description}</BookingP>
-                    <Button>{btnLabel}</Button>
+                    <Button onClick={()=>{navigate('/signup')}}>{btnLabel}</Button>
+                   
+
                 </BookingContent>
-                
-            </Container>
+               
+            </BookingContainer>
         </>
     )
 }

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import {  StarHalfIcon, StarIcon } from '../DestinationsSection/DestinationsElements';
+import { StarHalfIcon, StarIcon } from '../DestinationsSection/DestinationsElements';
 import { Container } from '../Elements/Elements';
 import SectionTitle from '../Elements/SectionTitle';
-import { Comment, CustomerAvatar, CustomerImg, CustomerName, Feedback, FeedbackCard, FeedbackContent, FeedbackP, NextButton, NextIcon, PrevButton, PrevIcon, SliderContainer, SliderContent, SliderContentWrap, SliderWrapper,CustomerRate } from './FeedbackElements';
+import { Comment, CustomerAvatar, CustomerImg, CustomerName, Feedback, FeedbackCard, FeedbackContent, FeedbackP, NextButton, NextIcon, PrevButton, PrevIcon, SliderContainer, SliderContent, SliderContentWrap, SliderWrapper, CustomerRate, StarsWrap } from './FeedbackElements';
 
 
 const DEFAULT_SHOW = 3;
@@ -35,13 +35,16 @@ const FeedbackSection = ({
                     <Feedback>
                         <Comment>{comment}</Comment>
                         <CustomerRate>
-                            <StarIcon />
-                            <StarIcon />
-                            <StarIcon />
-                            <StarIcon />
-                            <StarHalfIcon />
+                            <StarsWrap>
+                                <StarIcon />
+                                <StarIcon />
+                                <StarIcon />
+                                <StarIcon />
+                                <StarHalfIcon />
+                            </StarsWrap>
+                            <CustomerName>{userName}</CustomerName>
                         </CustomerRate>
-                        <CustomerName>{userName}</CustomerName>
+
                     </Feedback>
                 </FeedbackCard>
             )
@@ -96,7 +99,7 @@ function Slider({
         responsiveSlide();
 
         setLength(children.length);
-        
+
 
     }, [children])
 
@@ -147,7 +150,7 @@ function Slider({
 
         let width = window.innerWidth;
 
-       
+
 
         if (width <= 480) {
 
